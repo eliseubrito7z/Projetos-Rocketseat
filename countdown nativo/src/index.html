@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="/src/script.js" defer>
+    <script src="/Desafios rocket/countdown nativo/src/script.js" defer>
         //defer vai esperar todo o html carregar para ser executado
     </script>
 
@@ -18,34 +18,55 @@
 
 </head>
 <body>
-    <header>
-        <!-- <img src="../assets/top-image.svg" alt=""> -->
-    </header>
+    
+<div class="container">
 
-    <main>
-    <div class="countdown">
+    <img class="topSvg" src="../assets/top-image.svg" alt="">
+    <img class="bottomSvg" src="../assets/bottom-image.svg" alt="">
+
+
+    <div class="content-countdown">
+
+
         <p class="title">READY TO LAUNCH IN...</p>
-        <div class="names-timer">
-            <p>Dias</p>
-            <p>Horas</p>
-            <p>Minutos</p>
-            <p>Segundos</p>
-        </div>
-        <div id="timer"></div>
-        <p class="sub-title">Inscreva-se para saber mais sobre o lançamento</p>
-        <div class="subscribe">
-            <button>
-                Inscreva-se
-            </button>
-        </div>
-    </div>
-    <div class="rocket">
-        <!-- <img src="../assets/rocket.svg" alt=""> -->
-    </div>
-    </main>
+        <div class="countdown">
 
-    <footer>
-        <img src="../assets/bottom-image.svg" alt="">
-    </footer>
+            <div id="element" class="elementDays">
+                <span>Dias</span>
+                <p id="days"></p>
+            </div>
+            <div id="element" class="elementHours">
+                <span>Horas</span>
+                <p id="hours"></p>
+            </div>
+            <div id="element" class="elementMinutes">
+                <span>Minutos</span>
+                <p id="minutes"></p>
+            </div>
+            <div id="element" class="elementSeconds">
+                <span>Segundos</span>
+                <p id="seconds"></p>
+            </div>
+            
+        </div>
+
+        <div class="button-modal">
+                <p class="sub-title">Inscreva-se para saber mais sobre o lançamento</p>
+                <div class="subscribe">
+                <button>
+                </button>
+                    Inscreva-se
+                </div>
+        </div>
+        
+        
+    </div>
+
+    <div class="rocket">
+        <img id="rocketSvg" src="../assets/rocket.svg" alt="">
+    </div>
+
+</div>
+
 </body>
 </html>

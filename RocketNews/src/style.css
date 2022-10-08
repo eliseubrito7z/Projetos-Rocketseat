@@ -116,7 +116,6 @@ body{
 }
 
 .skip a{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     color: #8257E5;

@@ -26,7 +26,7 @@ header {
 
 .photo-profile img{
     background-color: transparent;
-    border: 1px solid #BB99DD;
+    border: 1px solid #4e1e7e;
     padding: 5px;
     width: 120px;
     height: 120px;
@@ -40,7 +40,7 @@ header {
 }
 
 p {
-    color: #BB99DD;
+    color: #4e1e7e;
 }
 
 .profile{
@@ -64,7 +64,7 @@ section {
 }
 
 .link{
-    border: 2px solid #BB99DD;
+    border: 2px solid #4e1e7e;
     margin-bottom: 10px;
     border-radius: 4px;
     text-align: center;

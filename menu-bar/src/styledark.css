@@ -1,0 +1,16 @@
+:root {
+    --body-bg-color-light: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color-light: #084236;
+
+    --body-bg-color-dark: #292C35;
+    --purple: #6C5DD3;
+    --light-purple: #8B7EE4;
+    --text-color-dark: #F6F6F6;
+}
+
+.dark-nav { 
+    background: var(--purple);
+}

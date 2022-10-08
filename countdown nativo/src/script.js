@@ -1,31 +1,35 @@
-function startTimer(duration, display){
-    let timer = duration, minutes, seconds;
+const daysEl = document.getElementById('days')
+const hoursEl = document.getElementById('hours')
+const minutesEl = document.getElementById('minutes')
+const secondsEl = document.getElementById('seconds')
+// const TimerTotal = document.getElementById('timerTotal')
 
-    setInterval(function () {
-        //transformando ms em s
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+const timeToLaunch = "25 oct 2022"
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+function countdown(){
+    const timeToLaunchDate = new Date(timeToLaunch)
+    const currentDay = new Date()
 
+    const timeRest = (timeToLaunchDate - currentDay) / 1000// seconds for day of lauch
+    console.log(timeRest)
+    const days = Math.floor(timeRest / 3600 / 24); //3600 = 60s * 60m
+    const hours = Math.floor(timeRest / 3600) % 24;
+    const minutes = Math.floor(timeRest / 60) % 60;
+    const seconds = Math.floor(timeRest % 60)
 
-        display.textContent = minutes + ":" + seconds;
+    daysEl.innerHTML = days;
+    hoursEl.innerHTML = formatTime(hours);
+    minutesEl.innerHTML = formatTime(minutes);
+    secondsEl.innerHTML = formatTime(seconds);
+    // TimerTotal.innerHTML = `${days}:${hours}:${minutes}:${seconds}`
+}
 
-        if (--timer < 0){
-            timer = duration;
-        }
-
-    }, 1000);//a cada mil ms vai atualizar
-
-    
+function formatTime(time){
+    return time < 10 ? `0${time}` : time;
 
 }
 
-window.onload = function () {
 
-    let duration = 60 * 5;
-         display = document.querySelector("#timer")
+countdown()
 
-    startTimer(duration, display);
-}
+setInterval(countdown, 1000) // for refresh the countdown for 1000ms or 1s
