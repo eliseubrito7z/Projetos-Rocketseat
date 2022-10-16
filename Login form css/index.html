@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- FONT POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <header class="container__header">
+            <img src="../images/logo.svg" alt="" class="container__logo">
+        </header>
+
+        <section class="container__section">
+
+            <div class="container__login">
+
+                <div class="container__login__title">
+                    <img src="../images/log-in.svg" alt="" class="container__login_icon">
+                    <h1 class="container__login__title">Faça seu login</h1>
+                </div>
+                
+                <p class="container__login__subtitle">Entre com suas informações de cadastro</p>
+
+                <form action="#" method="get" class="container__form" target="_blank">
+
+                    <label for="container__form__email" class="container__form__label">E-mail</label>
+                    <input type="email" id="container__form__email" required placeholder="Digite seu e-mail" autocomplete="email" title="Digite um email válido" class="container__form__input input__email">
+                    
+                    <br>
+                    <label for="container__form__password" class="container__form__label">Senha</label>
+                    <input type="email" id="container__form__password" required placeholder="Digite sua senha" title="Digite sua senha" class="container__form__input input__password">
+                    <br> 
+
+                    <div class="container__form__options">
+                        <label class="remember">
+                            <i class="box__checkbox"></i>
+                            <span class="container__remeber__text">Lembre-me</span>
+                        </label>
+                        <a href="#" class="container__form__recover">Esqueci minha senha</a>
+                    </div>
+                </form>
+
+                <div class="container__login__button">
+                    <a href="../menu-bar/src/index.html" class="container__login__button">Entrar</a>
+                </div>
+                
+
+                <!-- <button class="container__login__button" type="submit">
+                    <p class="container__button__text">Entrar</p>
+                    <a href="../menu-bar/src/index.html"></a>
+                </button> -->
+            </div>
+        </section>
+
+        <section class="container__cover">
+            <!-- ESPAÇO PARA A IMG DO COVER (CSS) -->
+        </section>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+
+    --body-bg-color-dark: #292C35;
+    --purple: #6C5DD3;
+    --light-purple: #8B7EE4;
+    --text-color-dark: #F6F6F6;
+
+    /* ANIMATIONS */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--body-bg-color);
+    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    transition: var(--tran-05);
+}
+
+nav {
+    width: 250px;
+    height: 100vh;
+    background: #18c29c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: var(--tran-05);
+}
+
+nav p, input{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: var(--tran-04);
+    opacity: 1;
+    white-space: nowrap;
+}
+
+/* logo VET */
+nav .sidebar-top .logo .icon{ 
+    width: 64px;
+    height: 26px;
+}
+
+nav .sidebar-top .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .sidebar-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* logo VET */
+
+/* options bar */
+
+nav .main-content{
+    padding: 15px;
+}
+
+nav .main-content .sidebar-content{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav .sidebar-content{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.sidebar-content div, i{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem; /*12px*/
+    height: 40px;
+    padding: 2px;
+}
+
+nav .sidebar-footer{
+    background: #8ed7c6;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+/* search */
+.search{
+    display: flex;
+    background-color: #8ed7c6;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-left: -0.5rem;
+    border-radius: 12px;
+    height: 50px;
+}
+
+.search input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    width: 170px;
+}
+
+/* search */
+
+
+
+/* sidebar-footer */
+.personal-infos .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.personal-infos .occupation{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.profile{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .main-content .sidebar-content div:hover{
+    background-color: #8ed7c6;
+    border-radius: 12px;
+    transition: var(--tran-2);
+}
+
+/* sidebar-footer */
+
+
+
+
+
+/* SIDEBAR CLOSE */
+
+/* tamanho da sidebar */
+.close-nav {
+    width: 60px;
+}
+/* tamanho da sidebar */
+
+.close-nav p, .close-nav input{
+    opacity: 0;
+}
+
+
+/* logo VET */
+nav .main-content .sidebar-top .close{ /*Icon and name VET*/
+    overflow: hidden; /*para o logo sumir*/
+    opacity: 0;
+}
+/* logo VET */
+
+/* menu ao centro */
+nav .main-content .close-sidebarT .menu{
+    display: flex;
+    position: absolute;
+}
+/* menu ao centro */
+
+/* background do botão search */
+.sidebar-content .close{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #8ed7c6;
+    padding: 8px;
+    border-radius: 12px;
+    height: 50px;
+    width: 42px;
+    margin-left: -0.5rem;
+}
+/* background do botão search */
+
+/* Footer sidebar close */
+
+nav .sidebar-footer .close{
+    background: #8ed7c6;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+
+nav .close-sidebarF{
+    align-items: center;
+    justify-content: center;
+}
+
+nav .sidebar-footer .close-logout{
+    position: absolute;
+}
+/* Footer sidebar close */
+
+/* SECTION AND OTHERS ITEMS PAGE */
+
+nav .button-close{
+    opacity: 0;
+}
+
+
+
+section{
+    margin: 10px;
+}
+
+section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* ====== SIDEBAR DARK ======  */
+
+/* BUTTON THEME */
+
+/* BUTTON COMPLETE */
+nav .main-content .button-theme{
+    display: flex;
+    align-items: center;
+}
+/* BUTTON COMPLETE */
+
+/* BUTTON OPTIONS */
+nav .main-content .button-theme .themes
+{
+    display: flex;
+    background: #000000;
+    width: 65px;
+    height: 30px;
+    border-radius: 59px;
+    justify-content: center;
+    align-items: center;
+}
+/* BUTTON OPTIONS */
+
+/* BUTTON SELECTOR */
+nav .main-content .selector{
+    width: 25px;
+    height: 25px;
+    background-color: #F6F6F6;
+    position: absolute;
+    border-radius: 50%;
+    margin: 4px;
+    animation: themeDark 0.3s forwards;
+}
+
+nav .main-content .switch-theme{
+    animation: themeLight 0.3s forwards;
+}
+/* BUTTON SELECTOR */
+
+
+.dark-nav { 
+    background: var(--purple);
+}
+
+/* footer */
+nav .dark-sidebarF{
+    background: var(--light-purple);
+}
+
+nav .main-content .dark-sidebarC div:hover{
+    background-color: #8B7EE4;
+}
+
+.dark-sidebarC .close{
+    background-color: var(--light-purple);
+}
+
+.dark-sidebarC .search{
+    background-color: var(--light-purple);
+}
+
+.dark-mainContent p, span, .dark-nav .dark-sidebarF p{
+    color: var(--text-color-dark);
+}
+
+
+
+/* Icon VET dark */
+/* nav .icon-dark, .menu-dark{
+    opacity: 0;
+    position: absolute;
+}
+
+
+.dark-nav .icon-dark{
+    opacity: 1;
+} */
+/* Icon VET dark */
+
+.dark-nav path{
+    stroke: #F6F6F6;
+}
+
+.dark-logo path, .dark-sidebarC .vets path{
+    fill: #F6F6F6;
+    stroke: none;
+}
+
+.dark-nav input::placeholder{
+    color: #F6F6F6;
+}
+
+.dark-nav input{
+    color: #F6F6F6;
+}
+
+.dark-body{
+    background-color: var(--body-bg-color-dark);
+    transition: var(--tran-05);
+}
+
+.dark-body .page{
+    color: var(--text-color-dark);
+    animation: bodyDark 1s forwards;
+}
+
+body .page{
+    animation: bodyLight 1s forwards;
+}
+
+
+
+
+@keyframes bodyDark {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100% + 15vw));
+    }
+}
+
+@keyframes bodyLight{
+    from {
+        transform: translateX(calc(100% + 15vw));
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes themeLight{
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(125%);
+    }
+}
+
+@keyframes themeDark{
+    from {
+        transform: translateX(125%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+

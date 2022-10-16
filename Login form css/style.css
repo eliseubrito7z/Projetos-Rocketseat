@@ -1,6 +1,6 @@
 :root {
     /* THEME DESIGN */
-    --text-base-old: #afb6c2;
+    --text-base: #afb6c2;
     --text-title: #d4ccb6;
     --background: #191816;
     --form-background: #24221f;
@@ -12,9 +12,6 @@
     --light-green: #8ed7c6;
     --light-grey: #dce4e3;
     --text-color: #084236;
-    --form-background-light: #EEF0F0;
-    --text-title-light: #217463;
-    --text-base: #084236;
 
     /* DARK THEME */
     --body-bg-color-dark: #292C35;
@@ -40,33 +37,18 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: var(--body-bg-color);
+    background: var(--background);
     min-width: 50vw;
     overflow: hidden;
 }
 
 .container {
-    /* display: grid;
-    grid-template-columns: 55vw 45vw; */
-    /* overflow: hidden; */
     display: flex;
 }
 
-.container__section {
-    width: 55vw;
+section {
+    width: 50vw;
     height: 100vh;
-    min-width: fit-content;
-}
-
-.container__cover{
-    width: 45vw;
-    height: 100vh;
-    background-color: var(--green);
-    background-image: url(../images/cover.svg);
-    background-size: 35vw;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin-bottom: 100px;
 }
 
 .container__header {
@@ -77,22 +59,20 @@ body {
 .container__section {
     display: grid;
     place-items: center;
-    width: 55vw;
+    width: 50vw;
     height: 100vh;
 }
 
 .container__login{
-    width: 35rem;
-    height: 30rem;
-    background-color: var(--form-background-light);
+    width: 600px;
+    height: 520px;
+    background-color: var(--form-background);
     padding: 60px 120px;
-    border-radius: 6px;
-    min-width: 30rem;
 }
 
 .container__login__title{
     display: flex;
-    color: var(--text-title-light);
+    color: var(--text-title-dark);
     font-family: 'Poppins';
     font-weight: 600;
     gap: 10px;
@@ -129,13 +109,11 @@ body {
 .container__form__input{
     width: 100%;
     height: 40px;
-    outline: var(--green);
+    outline: #6C5DD3;
     background-color: transparent;
     border: 1px solid #868686;
     border-radius: 4px;
     color: var(--text-base);
-    font-weight: 500;
-    font-family: 'Roboto';
 }
 
 .input__email{
@@ -146,7 +124,7 @@ body {
 }
 
 .input__email:focus{
-    border: 2px solid var(--green);
+    border: 2px solid #6C5DD3;
     background-image: url(../images/mail-focus.svg);
 }
 
@@ -158,7 +136,7 @@ body {
 }
 
 .input__password:focus{
-    border: 2px solid var(--green);
+    border: 2px solid #6C5DD3;
     background-image: url(../images/lock-focus.svg);
 }
 
@@ -167,38 +145,15 @@ body {
 
 /* PASSWORD INPUT */
 
-/* .container__button__link{
-    width: 100%;
-    height: 100%;
-    background-color: #084236;
-} */
 
-.container__login__button{ 
-    width: 100%;
-    height: 50px;
-    background-color: var(--green);
-    display: grid;
-    place-items: center;
-    color: var(--light-grey);
-    font-family: 'Roboto';
-    font-weight: 500;
-}
 
 /* PASSWORD INPUT */
 
-/* Register */
+/* .container__form__input:focus{
+    box-shadow: 0px 0px 0px 2px #6C5DD3;
+    border: 1px solid #6C5DD3;
+} */
 
-.container__registerText{
-    text-align: center;
-    color: var(--green);
-    font-family: 'Poppins';
-    font-weight: 400;
-}
-
-
-
-
-/* Register */
 .input__email{
     display: flex;
 }
@@ -231,15 +186,23 @@ body {
 }
 
 .container__form__recover{
-    color: var(--green);
+    color: #6C5DD3;
 }
 
 .container__login__button{
     width: 100%;
     height: 50px;
-    background: var(--green);
+    background: var(--purple);
     font-weight: 600;
     font-size: 16px;
     border: none;
 }
 
+.container__cover{
+    background-color: #6C5DD3;
+    background-image: url(../images/cover.svg);
+    background-size: 35vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 100px;
+}
